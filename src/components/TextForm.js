@@ -6,7 +6,10 @@ export default function TextForm(props) {
     const handleUpClick = () => {
         // console.log("Upper Case was Clicked" + text);
         let newText = text.toUpperCase();
-        setText(newText)
+        setText(newText);
+
+      
+
 
     }
     const handleLoClick = () => {
@@ -36,7 +39,7 @@ export default function TextForm(props) {
     
     return (
         <>   
-     <div style ={{color: props.mode==='dark'?'white':'#042743'}}>
+     <div style ={{color: props.mode==='dark'?'white':'black'}}>
 
             <div className="mb-3">
                 <h1 >{props.heading} - </h1>
@@ -53,7 +56,7 @@ export default function TextForm(props) {
             
     </div>
     
-    <div className="container my-3" style ={{color: props.mode ==='light'?('#042743'):('white')}} >
+    <div className="container my-3" style ={{color: props.mode ==='light'?('black'):('white')}} >
         <h1>your Text summary</h1>
         <p>No. of Words:{text.split(" ").length}  ||  No. of Characters: {text.length} </p>
 
